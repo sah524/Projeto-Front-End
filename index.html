@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil</title>
+
+    <!-- FONTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=IM+Fell+English&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <!-- MENU -->
+            <nav class="menu-vintage">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-overlay">
+                        <img src="imagens/Logo.png" alt="Brasil Independência Logo" class="logo-img">
+                    </div>
+                </div>
+
+                <ul>
+                    <li><a href="index.html"><img src="imagens/Icons/pergaminho-antigo.png" alt="Início" class="icon-vintage"> Início</a></li>
+                    <li><a href="linhatime.html"><img src="imagens/Icons/ampulheta.png" alt="Linha do Tempo" class="icon-vintage"> Linha do Tempo</a></li>
+                    <li><a href="galeria.html"><img src="imagens/Icons/quadro-armacao.png" alt="Galeria" class="icon-vintage"> Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Container do ídeo com overlay -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="video-bg">
+                <source src="videos/History.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+        </div>
+    
+        <!-- Conteúdo do site -->
+        <div class="content">
+            <h1>Bem-vindo ao Passado</h1>
+            <p>Embarque em uma jornada única e mergulhe na história do Brasil, revivendo os momentos que formaram nossa nação.</p>
+        </div>
+     
+    </div>
+    
+    <!--FOOTER INICIO-->
+    <footer class="footer-vintage">
+        <p>Autores: Lia Costa, Sarah Gabriel, Alan Nascimento</p>
+        <p>&copy; 2025 Brasil. Todos os direitos reservados.</p>
+    </footer>
+    <!--FOOTER FIM-->
+
+    <!-- JavaScript scroll  -->
+    <script>
+      const header = document.querySelector('header');
+
+      function handleScroll() {
+          if (window.scrollY > 100) {  // Quando rolar 100px para baixo
+              header.classList.add('sticky');
+          } else {
+              header.classList.remove('sticky');
+          }
+      }
+
+      // Evento de rolagem
+      window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>

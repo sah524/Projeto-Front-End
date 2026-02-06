@@ -1,0 +1,82 @@
+/* --------------------- MENU NO TOPO --------------------- */
+
+.menu-vintage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+    border-bottom: 2px solid #b9a377;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+    font-family: 'Cinzel', serif;
+}
+
+.menu-vintage .menu-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --------------------- Logo --------------------- */
+.logo-container {
+    position: absolute;
+    left: 10px; /* ← Ajustado de 20px para 10px */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+/* --------------------- Logo --------------------- */
+
+/* Centraliza os links mesmo com logo no canto */
+.menu-vintage ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+}
+
+.menu-vintage ul li a {
+    color: #f5deb3;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.menu-vintage ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border-bottom: 2px solid #d4b56a;
+}
+
+.icon-vintage {
+    width: 22px;
+    height: 22px;
+    filter: sepia(0.7) contrast(1.2) brightness(0.9);
+    vertical-align: middle;
+}
+
+body {
+    padding-top: 80px;
+}

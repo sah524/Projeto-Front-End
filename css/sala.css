@@ -1,0 +1,93 @@
+/*--------------------- Body video (inicio) ---------------------*/
+/* Container do vídeo com overlay escuro */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* O vídeo ocupa a tela toda */
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobreposição escura */
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+/* Conteúdo por cima */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 5rem;
+}
+/*--------------------- Body video (Final) ---------------------*/
+
+
+/*--------------------- CONTEÚDO (Inicio) ---------------------*/
+.galeria-conteudo {
+    max-width: 1200px;
+    margin: 120px auto 40px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    color: #f5deb3;
+    font-family: 'IM Fell English', serif;
+}
+
+.galeria-conteudo h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+/* ESTRUTURA DE IMAGEM COM LEGENDA EMBAIXO */
+.imagem-com-sinopse {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imagem-com-sinopse img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+}
+
+.legenda-abaixo {
+    color: #f0e8d9;
+    font-size: 1em;
+    font-family: 'IM Fell English', serif;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .galeria-conteudo {
+        padding: 15px;
+    }
+
+    .legenda-abaixo {
+        font-size: 0.95em;
+        padding: 0 10px;
+    }
+}
+/*--------------------- CONTEÚDO (Final) ---------------------*/

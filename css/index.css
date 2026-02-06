@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=IM+Fell+English&display=swap'); /* Fontes para o menu */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/*--------------------- Icons CSS (Inicio) ---------------------*/
+body {
+    margin: 0;
+    background-color: #f7f2e4;
+    font-family: 'IM Fell English', serif;
+}
+
+/*--------------------- Icons CSS (Fim) ---------------------*/
+
+/*--------------------- Logo CSS (Inicio) ---------------------*/
+/* Logo com efeito escuro */
+header .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 50px; /* empurra a logo para a direita */
+}
+
+
+/* Sobreposição escura */
+header .logo .logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Escurece a área da logo */
+    transition: background-color 0.3s ease; /* Suaviza a transição de escurecimento */
+}
+
+header .logo .logo-img {
+    width: 130px; /* Tamanho fixo da logo, pode ser ajustado conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+    position: relative; /* Coloca a imagem acima da sobreposição */
+}
+
+/* Efeito de aumento da logo ao passar o mouse */
+header .logo .logo-img:hover {
+    transform: scale(1.1); /* Aumenta a logo ligeiramente no hover */
+}
+
+/* Aumentando o escurecimento da sobreposição no hover */
+header .logo .logo-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Escurece mais ao passar o mouse */
+}
+
+/* Responsividade: Ajustando a logo para telas menores */
+@media (max-width: 768px) {
+    header .logo .logo-img {
+        width: 150px; /* Reduz o tamanho da logo em telas menores (tablets) */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo .logo-img {
+        width: 120px; /* Logo ainda menor para telas muito pequenas (smartphones) */
+    }
+}
+
+
+/*--------------------- Logo CSS (Final) ---------------------*/
+
+/*--------------------- Icons CSS (Inicio) ---------------------*/
+.icon-vintage {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: sepia(0.5) contrast(1.2) brightness(0.9); /* Dá um toque mais envelhecido */
+}
+/*--------------------- Icons CSS (Final) ---------------------*/
+
+/*--------------------- Menu CSS (Inicio) ---------------------*/
+.menu-vintage {
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente com um tom bem suave */
+    padding: 15px 0;
+    border-left: 4px solid #b9a377; /* Alterei para borda esquerda, pois o menu estará à direita */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para dar destaque */
+    font-family: 'Cinzel', serif;
+    position: fixed;  /* Fixa o menu na tela */
+    top: 0;  /* Coloca o menu no topo */
+    right: 0;  /* Alinha o menu à direita */
+    width: auto; /* O menu não precisa ocupar toda a largura */
+    z-index: 9999; /* Garante que o menu fique acima de outros elementos */
+    height: 100%;  /* O menu ocupará toda a altura da tela */
+}
+
+.menu-vintage ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Para preencher a altura do menu */
+}
+
+.menu-vintage ul li a {
+    color: #f5deb3; /* Cor clara para o texto */
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: 0.3s;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-vintage ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo mais claro no hover */
+    border-bottom: 2px solid #d4b56a; /* Acentuando a borda no hover */
+}
+
+/*--------------------- Menu CSS (Final) ---------------------*/
+
+/*--------------------- Conteudo CSS (Inicio) ---------------------*/
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    z-index: 10;
+    width: 100%;
+    max-width: 900px;
+    margin: 100px auto 0 auto;  /* Adiciona espaçamento no topo */
+    padding-right: 300px;
+    box-sizing: border-box;
+}
+
+
+.content h1 {
+    font-size: 3rem;
+    color: #b9a377;  /* Cor dourada para um toque de antiguidade */
+    font-family: 'Cinzel', serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Sombra sutil para destacar */
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: #f5deb3;  /* Cor suave para o texto */
+    font-family: 'IM Fell English', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+/*--------------------- Conteudo CSS (Final) ---------------------*/
+
+
+/*--------------------- Body video (inicio) ---------------------*/
+/* Container do vídeo com overlay escuro */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* O vídeo ocupa a tela toda */
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobreposição escura */
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); /* Escurece o vídeo */
+}
+
+/* Conteúdo por cima */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 5rem;
+}
+
+/*--------------------- Body video (Final) ---------------------*/
+
+/*--------------------- 3- Header CSS (Inicio) ---------------------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(50, 70, 100, 0); /* Fundo transparente inicialmente */
+    transition: all 0.5s linear; /* Transição suave para o fundo */
+    z-index: 999;
+}
+
+header.sticky {
+    border-bottom: 0.1rem solid var(--grey);
+    background: rgba(50, 70, 100, 0.7); /* Fundo mais opaco quando rolar */
+}
+
+/* Logo estilo vintage */
+header .logo h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+header .navbar a {
+    color: #F2F2F2;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+header .navbar a:hover,
+header .navbar a.active {
+    color: #BF871F !important; 
+    text-decoration: underline !important; 
+}
+
+header #menu-btn {
+    font-size: 3rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s linear;
+    display: none;
+}
+
+header .fa-times {
+    transform: rotate(180deg);
+}
+
+header #menu-btn:hover {
+    color: var(--purple);
+}
+
+/*--------------------- Header CSS (Final) ---------------------*/
+
+/*--------------------- Responsividade do Menu ---------------------*/
+@media (max-width: 768px) {
+    .menu-vintage ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+  
+    .menu-vintage ul li a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}

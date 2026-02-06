@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do tempo</title>
+
+    <link rel="stylesheet" href="css/linha-do-tempo.css">
+    <link rel="stylesheet" href="css/menu-vintage-top.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=IM+Fell+English&display=swap" rel="stylesheet">
+
+    <!--ICONS-->
+    <a href="https://www.flaticon.com/br/icones-gratis/lupa" title="lupa ícones"></a>
+    <a href="https://www.flaticon.com/br/icones-gratis/navio-pirata" title="navio pirata ícones"></a>
+</head>
+<body>
+    <header>
+        <nav class="menu-vintage">           
+                <div class="logo-container">
+                  <a href="/">
+                    <img src="imagens/Logo.png" alt="Logo Brasil" class="logo-img">
+                  </a>
+                </div>
+            <ul>
+                <li><a href="index.html"><img src="imagens/Icons/pergaminho-antigo.png" alt="Início" class="icon-vintage"> Início</a></li>
+                <li><a href="linhatime.html"><img src="imagens/Icons/ampulheta.png" alt="Linha do Tempo" class="icon-vintage"> Linha do Tempo</a></li>
+                <li><a href="galeria.html"><img src="imagens/Icons/quadro-armacao.png" alt="Galeria" class="icon-vintage"> Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="video-bg">
+            <source src="videos/ChegadaII.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <main class="timeline">
+           
+            <div class="timeline-title-box">
+                <img src="imagens/Icons/lupa.png" alt="Ícone Lupa" class="icon-title">
+                <h1 class="main-timeline-title">EXPLORE A LINHA DO TEMPO</h1>
+              </div>
+              
+            <!-- Período Pré-Colonial -->
+            <section class="timeline-section" id="pre-colonial">
+                <div class="section-header">
+                    <button class="toggle-events-btn">
+                        <img src="imagens/Icons/barco.png" alt="Ícone Pré-Colonial" class="icon-timeline">
+                    </button>
+                    <h2 class="timeline-title">I. Período Pré-Colonial (1500-1530)</h2>
+                </div>
+                <div class="timeline-events">
+                    <div class="event-box"><h4>1500:</h4><p>Chegada da frota de Pedro Álvares Cabral ao Brasil e primeiros contatos com os indígenas.</p></div>
+                    <div class="event-box"><h4>1501-1502:</h4><p>Expedição exploradora, possivelmente liderada por Gaspar de Lemos e com Américo Vespúcio, mapeia a costa e identifica o pau-brasil.</p></div>
+                    <div class="event-box"><h4>1500-1530:</h4><p>Exploração do pau-brasil através do escambo com os indígenas. Pouca presença portuguesa efetiva, com feitorias costeiras.</p></div>
+                </div>
+            </section>
+
+            <!-- Período Colonial -->
+            <section class="timeline-section" id="colonial">
+                <div class="section-header">
+                    <button class="toggle-events-btn">
+                        <img src="imagens/Icons/colonial.png" alt="Ícone Colonial" class="icon-timeline">
+                    </button>
+                    <h2 class="timeline-title">II. Período Colonial (1530-1822)</h2>
+                </div>
+                <div class="timeline-events">
+                    <div class="event-box"><h4>1530:</h4><p>Início da colonização com Martim Afonso de Sousa e a fundação de São Vicente.</p></div>
+                    <div class="event-box"><h4>1534:</h4><p>Divisão do Brasil em Capitanias Hereditárias.</p></div>
+                    <div class="event-box"><h4>1549:</h4><p>Instituição do Governo-Geral com Tomé de Sousa e a fundação de Salvador.</p></div>
+                    <div class="event-box">
+                        <h4>1750-1777:</h4>
+                        <p>Governo de Pombal, com reformas administrativas e a expulsão dos jesuítas.</p>
+                      </div>
+          
+                      <div class="event-box">
+                        <h4>1808:</h4>
+                        <p>A Família Real chega ao Brasil, tornando o Rio de Janeiro a sede do Reino de Portugal.</p>
+                      </div>
+                </div>
+            </section>
+
+            <!-- Período Imperial -->
+            <section class="timeline-section" id="imperial">
+                <div class="section-header">
+                    <button class="toggle-events-btn">
+                        <img src="imagens/Icons/imperial.png" alt="Ícone Imperial" class="icon-timeline">
+                    </button>
+                    <h2 class="timeline-title">III. Período Imperial (1822-1889)</h2>
+                </div>
+                <div class="timeline-events">
+                    <div class="event-box"><h4>1822:</h4><p>Proclamação da Independência por D. Pedro I.</p></div>
+                    <div class="event-box"><h4>1824:</h4><p>Primeira Constituição do Brasil.</p></div>
+                    <div class="event-box">
+                        <h4>1888:</h4>
+                        <p>A Lei Áurea abole a escravidão no Brasil.</p>
+                      </div>
+          
+                      <div class="event-box">
+                        <h4>1889:</h4>
+                        <p>Proclamação da República, com o fim do Império e a ascensão da República Velha.</p>
+                      </div>
+                </div>
+            </section>
+
+            <!-- Período Republicano -->
+            <section class="timeline-section" id="republicano">
+                <div class="section-header">
+                    <button class="toggle-events-btn">
+                        <img src="imagens/Icons/republica.png" alt="Ícone Republicano" class="icon-timeline">
+                    </button>
+                    <h2 class="timeline-title">IV. Período Republicano (1889-Presente)</h2>
+                </div>
+                <div class="timeline-events">
+                    <div class="event-box"><h4>1930:</h4><p>A Revolução de 1930 leva Getúlio Vargas ao poder.</p></div>
+                    <div class="event-box"><h4>1964-1985:</h4><p>Ditadura Militar e crescimento econômico.</p></div>
+                    <div class="event-box"><h4>1985:</h4><p>Fim da ditadura militar e início da Nova República com a eleição de Tancredo Neves.</p></div>
+                    <div class="event-box"><h4>1988:</h4><p>Promulgação da Constituição de 1988, garantindo direitos civis e sociais.</p></div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+     <!--FOOTER INICIO-->
+     <footer class="footer-vintage">
+        <p>Autores: Lia Costa, Sarah Gabriel, Alan Nascimento</p>
+        <p>&copy; 2025 Brasil. Todos os direitos reservados.</p>
+    </footer>
+    <!--FOOTER FIM-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          console.log("Script carregado!");
+      
+          const buttons = document.querySelectorAll('.toggle-events-btn');
+      
+          buttons.forEach(button => {
+            button.addEventListener('click', function () {
+              console.log("Botão clicado!");
+      
+              const section = this.closest('.timeline-section');
+              const events = section.querySelector('.timeline-events');
+      
+              if (events) {
+                events.classList.toggle('show-events');
+              } else {
+                console.log("Não encontrou os eventos!");
+              }
+            });
+          });
+        });
+    </script>
+      
+</body>
+</html>

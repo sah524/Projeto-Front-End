@@ -1,0 +1,34 @@
+/*--------------------- FOOTER ---------------------*/
+.footer-vintage {
+    color: #f5deb3;
+    font-family: 'IM Fell English', serif;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-vintage p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Faz o body ocupar 100% da tela */
+html, body {
+    height: 100%;
+}
+
+/* Wrapper principal para empurrar o footer para o fim */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Conteúdo ocupa o espaço restante */
+.content {
+    flex: 1;
+}
+
+
